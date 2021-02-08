@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+body{
+    background: url("https://images.pexels.com/photos/1040499/pexels-photo-1040499.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"), #111;
+    color:white;
+}
+.squ{
+    position: absolute;
+width: 1100px auto ;
+height: 550px auto;
+left: 10px;
+top: 40%;
+right:20px;
+box-shadow: rgba(253, 253, 253, 0.404) 0px 5px 15px;
+background: rgba(199, 191, 191, 0.12);
+border-radius: 10px;
+}
+.squ h2{
+    text-align: center;
+    color:white;
+    font-family:play;
+}
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="icon.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+    <a href="About.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+    <a href="Help.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Help</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>iCon</b></h1>
+  <p><b>Best Web Design and Developer Contact</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()"> <a href="Contact.html">Developer Profile</a> </button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+
+
+<!-- End Page Content -->
+</div>
+<div class="w3-row"class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" id="myGrid" style="margin-bottom:128px">
+ 
+    <div class="squ"><h2>About page</h2>
+        <ul >
+          <li>We are a software developing company working on projects including  website design  and development.</li>
+          <li>
+                After a succesful deployment process of the software we provide maintenance to out clients at very negligible cost.
+    
+          </li>
+          <li>
+            if any of out clients having any kind of issues related to the software they can contact us anytime through give number.
+          </li>
+        </ul>
+        
+        <h2>our goals</h2>
+        <ul>
+          <li>To integrate more complex software syatem into sub systems inn order ito be more convincing.</li>
+          <li>
+            To provide the most secure and reliable website which can fulfill your requirements.
+    
+          </li>
+          <li>
+            To assure customer satisfaction with  positive feedback and life time relationship.
+          </li>
+        </ul>
+        </div>
+</div>
+<!-- Footer -->
+<div class="footer" class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style=" position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</div>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
